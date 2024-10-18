@@ -37,6 +37,7 @@ ul,li{
     cursor: pointer;
     font-size: 50px;
     margin-left: 150px; /*no tocar*/
+    border-radius: 25%;
 }
 #Git{
     color: #D4AF37;
@@ -45,6 +46,7 @@ ul,li{
     cursor: pointer;
     font-size: 50px;
     margin-left: 150px; /*no tocar*/
+    border-radius: 50%;
 }
 #Git:hover{
     background: #D4AF37;
