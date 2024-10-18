@@ -29,16 +29,14 @@ h2, h4, h5, h6{
 ul,li{
     color: #EAE0C8;
 }
-button{
-    
-    margin-left: 150px; /*no tocar*/
-}
+
 .redes{
     color: #D4AF37;
     background: #1C3559;
     border: none;
     cursor: pointer;
     font-size: 50px;
+    margin-left: 150px; /*no tocar*/
 }
 #Git{
     color: #D4AF37;
@@ -46,6 +44,7 @@ button{
     border: none;
     cursor: pointer;
     font-size: 50px;
+    margin-left: 150px; /*no tocar*/
 }
 #Git:hover{
     background: #D4AF37;
