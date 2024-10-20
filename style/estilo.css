@@ -89,4 +89,19 @@ ul,li{
     max-height: 100%;
     object-fit: cover; /* Ajusta el aspecto del video */
 }
+.tecno{
+    width: 100px;
+    margin-left: 4%;
+    font-size: 200px;
+    color: black;
+}
+#html:hover{
+    color: orange !important;
+}
 
+#css:hover{
+    color: lightblue !important;
+}
+#js:hover{
+    color: yellow !important;
+}
