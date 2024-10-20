@@ -6,30 +6,35 @@
     font-family: silkscreen;
     src: url(fonts/Silkscreen/Silkscreen-Regular.ttf);
 }
-header,nav, body, footer {
-    background: linear-gradient(#171F2C, #20498B )
+nav, body, footer {
+    background: linear-gradient(#171F2C, #20498B );
+    margin: 10%;
 }
 #presentacion{
     width: 55%;
-    margin: 50px;
 }
 h1{
     font-size: 80px;
     font-family: Caveat;
     color: #eeb808;
-    text-align: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    
 }
 h2, h4, h5, h6{
     color: #e5be3f;
     font-family: silkscreen;
-    
     /*2A4D6F*/
 }
 
 ul,li{
     color: #EAE0C8;
 }
-
+#menu_redes{
+    min-height: 5%;
+    
+}
 .redes{
     color: #D4AF37;
     background: #1C3559;
@@ -38,6 +43,7 @@ ul,li{
     font-size: 50px;
     margin-left: 150px; /*no tocar*/
     border-radius: 25%;
+    
 }
 #Git{
     color: #D4AF37;
@@ -61,12 +67,13 @@ ul,li{
     transition: all 0.7s;
 }
 .circle {
+    margin: 5%;
     width: 450px;
     height: 450px;
     background-color: #D4AF37; /* Color del círculo */
     border-radius: 50%; /* Hace que el div sea circular */
     position: absolute; /* Fija la posición del círculo en la pantalla */
-    top: 40%; /* Ajusta la posición vertical */
+    top: 35%; /* Ajusta la posición vertical */
     right: 110px; /* Ajusta la distancia del círculo al borde derecho */
     transform: translateY(-50%); /* Centra el círculo verticalmente */
     display: flex; /* Usa flexbox para centrar el contenido */
