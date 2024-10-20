@@ -72,7 +72,7 @@ ul,li{
     margin-left: 48% ;
     width: 450px;
     height: 450px;
-    background: linear-gradient(#6b581a,#D4AF37 ) ; /* Color del círculo */
+    background: linear-gradient(#6b581a, #EAE0C8 ) ; /* Color del círculo */
     border-radius: 50%; /* Hace que el div sea circular */
     position: absolute; /* Fija la posición del círculo en la pantalla */
     top: 35%; /* Ajusta la posición vertical */
