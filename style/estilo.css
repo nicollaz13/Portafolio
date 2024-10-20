@@ -41,7 +41,7 @@ ul,li{
     border: none;
     cursor: pointer;
     font-size: 50px;
-    margin-left: 150px; /*no tocar*/
+    margin-left: 8%; 
     border-radius: 25%;
     
 }
@@ -51,7 +51,8 @@ ul,li{
     border: none;
     cursor: pointer;
     font-size: 50px;
-    margin-left: 150px; /*no tocar*/
+    margin-left: 8%;
+    margin-top: 1.5%; 
     border-radius: 50%;
 }
 #Git:hover{
@@ -68,13 +69,13 @@ ul,li{
 }
 .circle {
     margin: 5%;
+    margin-left: 48% ;
     width: 450px;
     height: 450px;
     background-color: #D4AF37; /* Color del círculo */
     border-radius: 50%; /* Hace que el div sea circular */
     position: absolute; /* Fija la posición del círculo en la pantalla */
     top: 35%; /* Ajusta la posición vertical */
-    right: 110px; /* Ajusta la distancia del círculo al borde derecho */
     transform: translateY(-50%); /* Centra el círculo verticalmente */
     display: flex; /* Usa flexbox para centrar el contenido */
     justify-content: center; /* Centra el video horizontalmente */
@@ -89,45 +90,3 @@ ul,li{
     object-fit: cover; /* Ajusta el aspecto del video */
 }
 
-
-@media (max-width: 768px){
-    #presentacion{
-        width: 70%;
-    }
-    h1{
-        font-size: 120px;
-    }
-    h2, h4, h5, h6{
-        font-size: 25px;
-    }
-    ul, li{
-        font-size: 20px;
-    }
-    button{
-        width: 100px;
-        margin-left: 0px;
-    }
-    #Git{
-        font-size: 100px;
-    }
-}
-@media (max-width: 992px){
-    #presentacion{
-        width: 90%;
-    }
-    h1{
-        font-size: 150px;
-    }
-    h2, h4, h5, h6{
-        font-size: 30px;
-    }
-    ul, li{
-        font-size: 25px;
-    }
-    button{
-        width: 150px;
-    }
-    #Git{
-        font-size: 150px;
-    }
-}
