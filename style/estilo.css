@@ -16,14 +16,14 @@ nav, body, footer {
 h1{
     font-size: 80px;
     font-family: Caveat;
-    color: #eeb808; 
+    color: rgb(233, 218, 151); 
     margin-top: 5px;
     margin-bottom: 5px;
     
     
 }
 h2, h4, h5, h6{
-    color: #e8cb69;
+    color: white;
     font-family: silkscreen;
     /*2A4D6F*/
 }
@@ -37,8 +37,8 @@ ul,li{
     
 }
 .redes{
-    color: #eeb808;
-    background: #1C3559;
+    color: rgb(233, 218, 151);
+    background: #13233a;
     border: none;
     cursor: pointer;
     font-size: 50px;
@@ -47,8 +47,8 @@ ul,li{
     
 }
 #Git{
-    color: #eeb808;
-    background: #1C3559;
+    color: rgb(233, 218, 151);
+    background: #13233a;
     border: none;
     cursor: pointer;
     font-size: 50px;
@@ -94,7 +94,7 @@ ul,li{
     width: 100px;
     margin-left: 4%;
     font-size: 200px;
-    color: black;
+    color: #13233a;
 }
 #tecnologias{
     margin-top: 50px;
