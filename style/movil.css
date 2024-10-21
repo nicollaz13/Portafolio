@@ -1,0 +1,26 @@
+@media(max-width:1250px){
+    #presentacion{
+        width: 90%;
+        margin: 0% auto;
+    }
+    #nombre{
+        width: 90%;
+        margin: 0% auto;
+        font-size: 25%;
+
+    }
+    #menu_redes{
+        margin-top: 30px;
+        width: 90%;
+        margin: 0% auto;
+    }
+    #circle{
+        margin: right;
+        width: 50%;
+        height: 25%;
+    }
+    .tecno{
+        width: 30%;
+        margin: 0% auto;
+    }
+}

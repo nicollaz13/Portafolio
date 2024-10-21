@@ -27,9 +27,11 @@ h2, h4, h5, h6{
     font-family: silkscreen;
     /*2A4D6F*/
 }
-
+.empleo{
+    color: rgb(233, 218, 151);
+}
 ul,li{
-    color: #EAE0C8;
+    color: white;
 }
 #menu_redes{
     min-height: 5%;
@@ -76,7 +78,7 @@ ul,li{
     transition: all 0.7s;
     font-size: 60px;
 }
-.circle {
+#circle {
     margin: 5%;
     margin-left: 48% ;
     width: 450px;
