@@ -14,12 +14,7 @@
         font-size: 25%;
 
     }
-    #menu_redes{
-        margin-top: 30px;
-        width: 50%;
-        margin: 0% auto;
-        position: relative;
-    }
+
     #circle{
         width: 350px;
         height: 350px;
@@ -28,8 +23,19 @@
         position: static;
         transform: translatex(-55%); /* Centra el círculo verticalmente */
     }
+    #menu_redes{
+        margin-top: 30px;
+        margin: 0% auto;
+        transform: translatex(15%);
+    }
+    .redes, #git{
+        align-items: center;
+        
+    }
     .tecno{
         width: 30%;
         margin: 0% auto;
+        font-size: 500%;
+        transform: translatex(15%);
     }
 }
