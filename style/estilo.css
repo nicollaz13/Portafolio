@@ -44,6 +44,7 @@ ul,li{
     font-size: 50px;
     margin-left: 8%; 
     border-radius: 25%;
+    transition: all 0.7s;
     
 }
 #Git{
@@ -53,20 +54,27 @@ ul,li{
     cursor: pointer;
     font-size: 50px;
     margin-left: 8%;
-    margin-top: 1.5%; 
     border-radius: 50%;
 }
 #Git:hover{
-    background: #eeb808;
-    color: #1C3559;
-    border-radius: 50px;
+    background: white;
+    color: black;
+    border-radius: 60px;
     transition: all 0.7s;
+    font-size: 60px;
 }
-.redes:hover{
-    background: #eeb808;
-    color: #1C3559;
+#instagram:hover {
+    color: white;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    transition: all 0.5s;
+    font-size: 60px;
+    }
+#linkedin:hover{
+    background: white;
+    color: #1256b6;
     border-radius: 10px;
     transition: all 0.7s;
+    font-size: 60px;
 }
 .circle {
     margin: 5%;
@@ -96,16 +104,17 @@ ul,li{
     font-size: 200px;
     color: #13233a;
 }
-#tecnologias{
-    margin-top: 50px;
-}
 #html:hover{
-    color: orange !important;
+ color: orange;
 }
-
 #css:hover{
-    color: lightblue !important;
+    color: rgb(34, 150, 217);
 }
 #js:hover{
-    color: yellow !important;
+color: yellow;
+}
+
+#tecnologias{
+    margin-top: 50px;
+    margin-right: 20% ;
 }
