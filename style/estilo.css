@@ -7,7 +7,7 @@
     src: url(fonts/Silkscreen/Silkscreen-Regular.ttf);
 }
 nav, body, footer {
-    background: linear-gradient(#171F2C, #20498B );
+    background: linear-gradient(#000000, #20498B );
     margin: 10%;
 }
 #presentacion{
@@ -23,7 +23,7 @@ h1{
     
 }
 h2, h4, h5, h6{
-    color: #e5be3f;
+    color: #e8cb69;
     font-family: silkscreen;
     /*2A4D6F*/
 }
@@ -33,10 +33,11 @@ ul,li{
 }
 #menu_redes{
     min-height: 5%;
+    margin-top: ;
     
 }
 .redes{
-    color: #D4AF37;
+    color: #eeb808;
     background: #1C3559;
     border: none;
     cursor: pointer;
@@ -46,7 +47,7 @@ ul,li{
     
 }
 #Git{
-    color: #D4AF37;
+    color: #eeb808;
     background: #1C3559;
     border: none;
     cursor: pointer;
@@ -56,13 +57,13 @@ ul,li{
     border-radius: 50%;
 }
 #Git:hover{
-    background: #D4AF37;
+    background: #eeb808;
     color: #1C3559;
     border-radius: 50px;
     transition: all 0.7s;
 }
 .redes:hover{
-    background: #D4AF37;
+    background: #eeb808;
     color: #1C3559;
     border-radius: 10px;
     transition: all 0.7s;
@@ -94,6 +95,9 @@ ul,li{
     margin-left: 4%;
     font-size: 200px;
     color: black;
+}
+#tecnologias{
+    margin-top: 50px;
 }
 #html:hover{
     color: orange !important;
