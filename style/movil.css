@@ -1,7 +1,12 @@
 @media(max-width:1250px){
+    body{
+        margin: 5%;
+        margin-top: 2%;
+    }
     #presentacion{
         width: 90%;
         margin: 0% auto;
+        margin-top: 5%;
     }
     #nombre{
         width: 90%;
@@ -11,13 +16,17 @@
     }
     #menu_redes{
         margin-top: 30px;
-        width: 90%;
+        width: 50%;
         margin: 0% auto;
+        position: relative;
     }
     #circle{
-        margin: right;
-        width: 50%;
-        height: 25%;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%; /* Hace que el div sea circular */
+        top: 35%; /* Ajusta la posición vertical */
+        position: static;
+        transform: translatex(-55%); /* Centra el círculo verticalmente */
     }
     .tecno{
         width: 30%;
