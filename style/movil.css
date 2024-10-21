@@ -2,17 +2,13 @@
     body{
         margin: 5%;
         margin-top: 2%;
+        width: auto;
+
     }
     #presentacion{
         width: 90%;
         margin: 0% auto;
         margin-top: 5%;
-    }
-    #nombre{
-        width: 90%;
-        margin: 0% auto;
-        font-size: 25%;
-
     }
 
     #circle{
@@ -37,5 +33,23 @@
         margin: 0% auto;
         font-size: 500%;
         transform: translatex(15%);
+    }
+}
+@media(max-width:915px){
+    #circle{
+        margin-top: 10%;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%; /* Hace que el div sea circular */
+        top: 35%; /* Ajusta la posición vertical */
+        position: static;
+        transform: translatex(-55%); /* Centra el círculo verticalmente */
+    }
+    #menu_redes{
+        margin-top: 10%;
+        transform: translatex(12%);
+    }
+    h1{
+        font-size: 60px;
     }
 }
