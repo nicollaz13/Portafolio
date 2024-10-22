@@ -115,7 +115,18 @@ ul,li{
 #js:hover{
 color: yellow;
 }
-
+#angular:hover{
+    color: #dd0031;
+}
+#react:hover{
+    color: #61DAFB;
+}
+#photo:hover{
+    color: #00B5EE;
+}
+#adobe:hover{
+    color: #800cae;
+}
 #tecnologias{
     margin-top: 50px;
     margin-right: 20% ;
