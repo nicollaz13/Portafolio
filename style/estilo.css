@@ -106,25 +106,54 @@ ul,li{
     margin-left: 4%;
     font-size: 200px;
     color: #13233a;
+    transition: color 1.5s ease;
 }
-#html:hover{
-color: orange;
+@keyframes htmla {
+    0% {
+      color: #13233a; /* Blanco */
+    }
+    100% {
+      color: orange; /* Azul claro */
+    }
+  }
+  @keyframes css {
+    0% {
+      color: #13233a; /* Blanco */
+    }
+    100% {
+      color: rgb(34, 150, 217); 
+    }
 }
-#css:hover{
-    color: rgb(34, 150, 217);
+    @keyframes jsa {
+        0% {
+          color: #13233a; 
+        }
+        100% {
+          color: yellow; 
+        }
+    }
 
+    @keyframes photo {
+        0% {
+          color: #13233a; 
+        }
+        100% {
+            color: #00B5EE;
+        }
+    }
+
+#html{
+animation: htmla 1.5s infinite alternate;
 }
-#js:hover{
-color: yellow;
+#css{
+animation: css 1.5s infinite alternate;
 }
-#angular:hover{
-    color: #dd0031;
+#js{
+    animation: jsa 1.5s infinite alternate;
 }
-#react:hover{
-    color: #61DAFB;
-}
-#photo:hover{
-    color: #00B5EE;
+
+#photo{
+    animation: photo 1.5s infinite alternate;
 }
 #adobe:hover{
     color: #67028b;
@@ -162,7 +191,7 @@ color: yellow;
     border-radius: 25px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 0px 15px orange;
+    box-shadow: 0px 0px 15px rgb(255, 211, 14);
   }
   
   .card img {
