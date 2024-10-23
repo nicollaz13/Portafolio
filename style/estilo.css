@@ -29,6 +29,7 @@ h2, h4, h5, h6{
 }
 .empleo{
     color: rgb(233, 218, 151);
+    font-size: 50px;
 }
 ul,li{
     color: white;
@@ -125,9 +126,22 @@ color: yellow;
     color: #00B5EE;
 }
 #adobe:hover{
-    color: #800cae;
+    color: #67028b;
 }
 #tecnologias{
     margin-top: 50px;
     margin-right: 20% ;
+}
+#figma:hover{
+    color: rgb(8, 244, 244) ;
+}
+#ai:hover{
+    color: #FFB900;
+}
+.exp{
+    background: linear-gradient(#000000, #20498B );
+    width: 10%;
+    padding: 15%;
+    border-radius: 10%;
+    
 }
