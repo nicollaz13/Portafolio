@@ -106,7 +106,7 @@ ul,li{
     margin-left: 4%;
     font-size: 200px;
     color: #13233a;
-    transition: color 1.5s ease;
+    transition: color 4.5s ease;
 }
 @keyframes htmla {
     0% {
@@ -142,31 +142,58 @@ ul,li{
         }
     }
 
+    @keyframes adobe {
+        0% {
+          color: #13233a; 
+        }
+        100% {
+            color: #67028b;
+        }
+    }
+    @keyframes figma {
+        0% {
+          color: #13233a; 
+        }
+        100% {
+            color: rgb(8, 244, 244);
+        }
+    }
+
+    @keyframes ai {
+        0% {
+          color: #13233a; 
+        }
+        100% {
+            color: #FFB900;
+        }
+    }
+
+
 #html{
-animation: htmla 1.5s infinite alternate;
+animation: htmla 3s infinite alternate;
 }
 #css{
-animation: css 1.5s infinite alternate;
+animation: css 3s infinite alternate;
 }
 #js{
-    animation: jsa 1.5s infinite alternate;
+    animation: jsa 3s infinite alternate;
 }
 
 #photo{
-    animation: photo 1.5s infinite alternate;
+    animation: photo 3s infinite alternate;
 }
-#adobe:hover{
-    color: #67028b;
+#adobe{
+    animation: adobe 3s infinite alternate;
 }
 #tecnologias{
     margin-top: 50px;
     margin-right: 20% ;
 }
-#figma:hover{
-    color: rgb(8, 244, 244) ;
+#figma{
+    animation: figma 3s infinite alternate;
 }
-#ai:hover{
-    color: #FFB900;
+#ai{
+    animation: ai 3s infinite alternate;
 }
 .exp {
     background: linear-gradient(#000000, #20498B );
@@ -187,6 +214,15 @@ animation: css 1.5s infinite alternate;
   }
   
   .card {
+    background: linear-gradient(#000000, #20498B);
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px white;
+  }
+
+
+  .card:hover {
     background: linear-gradient(#000000, #20498B);
     border-radius: 25px;
     padding: 20px;
