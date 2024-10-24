@@ -263,6 +263,7 @@ animation: css 3s infinite alternate;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-items: center; /* Alinea las imágenes y el texto verticalmente */
 }
 
 .tags span {
@@ -271,8 +272,16 @@ animation: css 3s infinite alternate;
   border-radius: 5px;
   font-size: 30px;
   color: #FFB900;
+  display: flex;
+  align-items: center; /* Alinea la imagen y el texto dentro del span */
 }
 
+.tags span img {
+  width: 25px; /* Ajusta el tamaño de la imagen */
+  height: 25px;
+  margin-right: 5px; /* Añade un espacio entre la imagen y el texto */
+  vertical-align: middle;
+}
 #indra, #lexco {
   margin-top: 55px;
   margin-bottom: 40px;
