@@ -31,11 +31,16 @@
     .tecno{
         width: 30%;
         margin: 0% auto;
-        font-size: 500%;
-        transform: translatex(15%);
+        align-items: center;
+        font-size: 400%;
+        transform: translatex(20%);
     }
+    .container{
+        flex-wrap: wrap; /* Para que las tarjetas se acomoden si no caben en una fila */
+    }
+
 }
-@media(max-width:915px){
+@media(max-width:1000px){
     #circle{
         margin-top: 10%;
         width: 250px;
@@ -51,5 +56,16 @@
     }
     h1{
         font-size: 60px;
+    }
+    .container{
+        width: 80%;
+        margin: 0% auto;
+    }
+    .card{
+    width: 190px;
+    margin: 10px auto;
+    }
+    .empleo{
+        text-align: center;
     }
 }
