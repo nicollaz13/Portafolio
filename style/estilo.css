@@ -17,10 +17,14 @@ nav, body, footer {
 h1{
     font-size: 80px;
     font-family: Caveat;
-    color: rgb(233, 218, 151); 
+    color: white;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    text-shadow: 
+    0 0 5px #FFD700, 
+    0 0 10px #FFD700, 
+    0 0 20px #FFA500, 
+    0 0 40px #FFA500;
     
 }
 h2, h4, h5, h6{
@@ -51,6 +55,7 @@ ul,li{
     border-radius: 25%;
     transition: all 0.7s;
     margin-top: 5%;
+
     
 }
 #Git{
@@ -63,15 +68,21 @@ ul,li{
     border-radius: 50%;
 }
 #Git:hover{
-    background: white;
     color: black;
     border-radius: 60px;
     transition: all 0.7s;
     font-size: 60px;
+    color: white;
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
 }
 #instagram:hover {
     color: white;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
     transition: all 0.5s;
     font-size: 60px;
     }
@@ -81,6 +92,9 @@ ul,li{
     border-radius: 10px;
     transition: all 0.7s;
     font-size: 60px;
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
 }
 #circle {
     margin: auto;
