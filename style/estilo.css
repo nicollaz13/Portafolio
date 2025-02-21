@@ -22,11 +22,11 @@ h1{
     margin-top: 5px;
     margin-bottom: 5px;
     text-shadow: 
-    0 0 5px #FFD700, 
-    0 0 10px #FFD700, 
-    0 0 20px #FFA500, 
-    0 0 40px #FFA500;
-    animation: glow 1.5s infinite alternate;
+        0 0 5px #FFD700, 
+        0 0 10px #FFD700, 
+        0 0 20px #FFA500, 
+        0 0 40px #FFA500;
+    animation: glow 2s infinite alternate;
     
 }
 @keyframes glow {
@@ -123,7 +123,7 @@ ul,li{
     margin-left: 52% ;
     width: 450px;
     height: 450px;
-    
+
     border-radius: 50%; /* Hace que el div sea circular */
     position: absolute; /* Fija la posición del círculo en la pantalla */
     top: 8%; /* Ajusta la posición vertical */
@@ -132,10 +132,10 @@ ul,li{
     justify-content: center; /* Centra el video horizontalmente */
     align-items: center; /* Centra el video verticalmente */
     overflow: hidden; /* Esconde el contenido que sobresalga del círculo */
-    filter: drop-shadow(0 0 5px #FFD700) 
-    drop-shadow(0 0 10px #FFD700) 
-    drop-shadow(0 0 20px #FFA500);
-}
+    filter: drop-shadow(0 0 5px white)  
+    drop-shadow(0 0 10px white) 
+    drop-shadow(0 0 20px #FFA500) 
+  }
 #nicolas {
     width: 1000px; /* Aumenta el ancho */
     height: 800px; /* Aumenta la altura */
