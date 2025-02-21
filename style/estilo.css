@@ -18,6 +18,7 @@ h1{
     font-size: 80px;
     font-family: Caveat;
     color: white;
+    letter-spacing: 3px; /* Ajuste de espaciado */
     margin-top: 5px;
     margin-bottom: 5px;
     text-shadow: 
@@ -25,7 +26,28 @@ h1{
     0 0 10px #FFD700, 
     0 0 20px #FFA500, 
     0 0 40px #FFA500;
+    animation: glow 1.5s infinite alternate;
     
+}
+@keyframes glow {
+  0% {
+    text-shadow: 
+        0 0 5px #FFD700, 
+        0 0 10px #FFD700, 
+        0 0 20px #FFA500;
+}
+50% {
+    text-shadow: 
+        0 0 10px #FFD700, 
+        0 0 20px #FFA500, 
+        0 0 40px #FF8C00;
+}
+100% {
+    text-shadow: 
+        0 0 5px #FFD700, 
+        0 0 10px #FFD700, 
+        0 0 20px #FFA500;
+}
 }
 h2, h4, h5, h6{
     color: white;
@@ -101,7 +123,7 @@ ul,li{
     margin-left: 52% ;
     width: 450px;
     height: 450px;
-    background: linear-gradient(#6b581a, #EAE0C8 ) ; /* Color del círculo */
+    
     border-radius: 50%; /* Hace que el div sea circular */
     position: absolute; /* Fija la posición del círculo en la pantalla */
     top: 8%; /* Ajusta la posición vertical */
@@ -110,7 +132,9 @@ ul,li{
     justify-content: center; /* Centra el video horizontalmente */
     align-items: center; /* Centra el video verticalmente */
     overflow: hidden; /* Esconde el contenido que sobresalga del círculo */
-    border: none;
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
 }
 #nicolas {
     width: 1000px; /* Aumenta el ancho */
