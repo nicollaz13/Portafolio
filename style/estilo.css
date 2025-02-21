@@ -12,6 +12,7 @@ nav, body, footer {
 }
 #presentacion{
     width: 55%;
+    margin-left: 35%;
 }
 h1{
     font-size: 80px;
@@ -36,9 +37,9 @@ ul,li{
     color: white;
 }
 #menu_redes{
-    min-height: 5%;
+    position: center;
+    margin-right: 45%;
     margin-top: 30px;
-    position: relative;
 }
 .redes{
     color: rgb(233, 218, 151);
@@ -49,6 +50,7 @@ ul,li{
     margin-left: 8%; 
     border-radius: 25%;
     transition: all 0.7s;
+    position: center;
     
 }
 #Git{
@@ -81,15 +83,15 @@ ul,li{
     font-size: 60px;
 }
 #circle {
-    margin: 5%;
+    margin: auto;
     margin-left: 48% ;
     width: 450px;
     height: 450px;
     background: linear-gradient(#6b581a, #EAE0C8 ) ; /* Color del círculo */
     border-radius: 50%; /* Hace que el div sea circular */
     position: absolute; /* Fija la posición del círculo en la pantalla */
-    top: 35%; /* Ajusta la posición vertical */
-    transform: translateY(-50%); /* Centra el círculo verticalmente */
+    top: 8%; /* Ajusta la posición vertical */
+    transform: translateX(-190%);
     display: flex; /* Usa flexbox para centrar el contenido */
     justify-content: center; /* Centra el video horizontalmente */
     align-items: center; /* Centra el video verticalmente */
@@ -101,6 +103,8 @@ ul,li{
     max-width: 100%; /* Asegura que el video no se salga del círculo */
     max-height: 100%;
     object-fit: cover; /* Ajusta el aspecto del video */
+    border-radius: 50%; /* Hace que el video sea circular */
+    transform: scaleX(-1);
 }
 .tecno{
     width: 100px;
