@@ -47,10 +47,10 @@ ul,li{
     border: none;
     cursor: pointer;
     font-size: 50px;
-    margin-left: 8%; 
+    margin-left: 7%; 
     border-radius: 25%;
     transition: all 0.7s;
-    position: center;
+    margin-top: 5%;
     
 }
 #Git{
@@ -84,7 +84,7 @@ ul,li{
 }
 #circle {
     margin: auto;
-    margin-left: 48% ;
+    margin-left: 52% ;
     width: 450px;
     height: 450px;
     background: linear-gradient(#6b581a, #EAE0C8 ) ; /* Color del círculo */
@@ -96,6 +96,7 @@ ul,li{
     justify-content: center; /* Centra el video horizontalmente */
     align-items: center; /* Centra el video verticalmente */
     overflow: hidden; /* Esconde el contenido que sobresalga del círculo */
+    border: none;
 }
 #nicolas {
     width: 1000px; /* Aumenta el ancho */
