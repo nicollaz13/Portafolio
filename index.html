@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style/movil.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
 </head>
 <body>
@@ -29,92 +31,10 @@
             <a href="https://www.instagram.com/nicolas._.hernandez/"><ion-icon name="logo-instagram" class="redes" id="instagram"></ion-icon></a>
             <a href="https://github.com/nicollaz13"><ion-icon name="logo-github" id="Git"></ion-icon></a>
         </div>
-        <!--
-    <div id="tecnologias">
-        <div id="carrusel">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="100px" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2" class="tecno" id="html" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="100px" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2" class="tecno" id="css"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="100px" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2" class="tecno" id="js"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M7.5 8h3v8l-2 -1" /><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" /></svg>
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="100px" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2" class="tecno" id="photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12c0 -4.243 0 -6.364 1.318 -7.682s3.44 -1.318 7.682 -1.318s6.364 0 7.682 1.318s1.318 3.44 1.318 7.682s0 6.364 -1.318 7.682s-3.44 1.318 -7.682 1.318s-6.364 0 -7.682 -1.318s-1.318 -3.44 -1.318 -7.682" /><path d="M6.79 15.79v-3.79m0 0v-2.724c0 -.11 0 -.165 .004 -.211c.044 -.45 .4 -.806 .85 -.85c.046 -.004 .101 -.004 .211 -.004h1.303a1.895 1.895 0 1 1 0 3.789z" /><path d="M17.178 11.263c-.164 -.659 -.935 -1.158 -1.862 -1.158c-1.047 0 -1.895 .637 -1.895 1.421c0 .785 .848 1.421 1.895 1.421c1.046 0 1.895 .637 1.895 1.421c0 .785 -.849 1.421 -1.895 1.421c-.93 0 -1.704 -.502 -1.864 -1.165" /></svg>
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="100px" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2" class="tecno" id="adobe"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12c0 -4.243 0 -6.364 1.318 -7.682s3.44 -1.318 7.682 -1.318s6.364 0 7.682 1.318s1.318 3.44 1.318 7.682s0 6.364 -1.318 7.682s-3.44 1.318 -7.682 1.318s-6.364 0 -7.682 -1.318s-1.318 -3.44 -1.318 -7.682" /><path d="M12 15.79l-.82 -2.653m-4.864 2.652l.82 -2.652m0 0l.686 -2.218c.559 -1.806 .838 -2.708 1.336 -2.708s.777 .902 1.335 2.708l.686 2.218m-4.043 0h4.043" /><path d="M13.895 12.824v1.07a1.895 1.895 0 0 0 3.54 .942m-3.54 -2.012v-.824a1.895 1.895 0 1 1 3.79 0v.824z" /></svg>
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="100px" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2" class="tecno" id="figma"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" /><path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" /></svg>
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="100px" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2" class="tecno" id="ai" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12c0 -4.243 0 -6.364 1.318 -7.682s3.44 -1.318 7.682 -1.318s6.364 0 7.682 1.318s1.318 3.44 1.318 7.682s0 6.364 -1.318 7.682s-3.44 1.318 -7.682 1.318s-6.364 0 -7.682 -1.318s-1.318 -3.44 -1.318 -7.682" /><path d="M12.947 15.79l-.82 -2.653m-4.864 2.652l.82 -2.652m0 0l.687 -2.218c.558 -1.806 .838 -2.708 1.335 -2.708c.498 0 .777 .902 1.336 2.708l.686 2.218m-4.043 0h4.043" /><path d="M15.789 15.789v-4.736" /><path d="M15.789 8.684v-.473" /></svg>
-        </div>
-    </div>
-    -->
   </section>
-  <!-- /.container 
-  <script>
-    const video = document.getElementById("nicolas");
-  
-    function isVideoInView() {
-      const rect = video.getBoundingClientRect();
-      return rect.top >= 0 && rect.bottom <= window.innerHeight;
-    }
-  
-    window.addEventListener("scroll", () => {
-      if (!isVideoInView()) {
-        video.pause();
-      } else {
-        video.play();
-      }
-    });
-  </script>
-  -->
-  <section id="exp">
-    <h3 class="empleo"> Experiencia</h3>
-    <div class="container">
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="img/indra.jpg" alt="indra" id="indra">
-            <h3>Mesa de ayuda tecnologica</h3>
-            <p>Soporte a distancia tiendas D1 (2024-actualmente)</p>
-            <div class="tags">
-              <span><img src="img/linux.png" alt="linux">Linux</span>
-              <span><img src="img/carpeta.png" alt="directorio">Directorio activo</span>
-            </div>
-          </div>
-        <!-- Card 2 -->
-        <div class="card">
-            <img src="img/lexco.png" alt="lexco" id="lexco">
-            <h3>Soporte de Software</h3>
-            <p>Soporte de Software Sevenet (2023)</p>
-            <div class="tags">
-              <span><img src="img/php.png" alt="php">PHP</span>
-              <span> <img src="img/linux.png" alt="linuxs">Linux</span>
-              <span><img src="img/js.png" alt="js">JavaScript</span>
-              <span> <img src="img/sql.png" alt="sql">SQL</span>
-              <span><img src="img/mysql.png" alt="mysql">MYSQL</span>
-            </div>
-          </div>
-        <!-- Card 3 -->
-        <div class="card">
-          <img src="img/mhbego.png" alt="mario hernandez">
-          <h3>Premio Mario Hernandez</h3>
-          <p>Participacion Diseño de producto en concurso (2023)</p>
-          <div class="tags">
-            <span><img src="img/photoshop.png" alt="photoshop">Photoshop</span>
-            <span><img src="img/figma.png" alt="figma">Figma</span>
-            <span><img src="img/adobei.png" alt="">Adobe ilustrator</span>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="proyecto">
-      <div class="clearfix"></div>
-        <h3 class="empleo">Proyecto</h3>
-          <div class="container">
-            <div class="card">
-              <h3>Proyecto1</h3>
-            </div>
-            <div class="card">
-              <h3>Proyecto2</h3>
-            </div>
-            <div class="card">
-              <h3>Proyecto3</h3>
-            </div>
-      </div>
-    </section>
+  <section id="exp">
+    <h3 class="empleo">EXPERIENCIA</h3>
+  </section>
 </body>
 </html>
