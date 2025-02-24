@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", resizeCanvas);
 
     const stars = [];
-    const numStars = 150;
+    const numStars = 200;
 
     for (let i = 0; i < numStars; i++) {
         stars.push({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
-            radius: Math.random() * 2 + 1,
-            speed: Math.random() * 2 + 0.5
+            radius: Math.random() * 1 + 0.5,
+            speed: Math.random() * 0.3 + 0.1,
         });
     }
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         stars.forEach((star) => {
             ctx.beginPath();
-            ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+            ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 6);
             ctx.fill();
 
             // Movimiento descendente
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Si la estrella sale de la pantalla, la reposicionamos arriba
             if (star.y > canvas.height) {
-                star.y = 0;
+                star.y = 1;
                 star.x = Math.random() * canvas.width;
             }
         });
