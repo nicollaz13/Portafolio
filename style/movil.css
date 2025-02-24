@@ -1,71 +1,301 @@
-@media(max-width:1250px){
-    body{
-        margin: 5%;
-        margin-top: 2%;
-        width: auto;
-
-    }
-    #presentacion{
-        width: 90%;
-        margin: 0% auto;
-        margin-top: 5%;
-    }
-
-    #circle{
-        width: 350px;
-        height: 350px;
-        border-radius: 50%; /* Hace que el div sea circular */
-        top: 35%; /* Ajusta la posición vertical */
-        position: static;
-        transform: translatex(-55%); /* Centra el círculo verticalmente */
-    }
-    #menu_redes{
-        margin-top: 30px;
-        margin: 0% auto;
-        transform: translatex(22%);
-    }
-    .redes, #git{
-        align-items: center;
-        
-    }
-    .tecno{
-        width: 30%;
-        margin: 0% auto;
-        align-items: center;
-        font-size: 400%;
-        transform: translatex(20%);
-    }
-    .container{
-        flex-wrap: wrap; /* Para que las tarjetas se acomoden si no caben en una fila */
-    }
-
+@media (max-width: 1250px) {
+@font-face {
+    font-family: Caveat;
+    src: url(fonts/Caveat/Caveat-VariableFont_wght.ttf);
 }
-@media(max-width:1000px){
-    #circle{
-        margin-top: 10%;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%; /* Hace que el div sea circular */
-        top: 35%; /* Ajusta la posición vertical */
-        position: static;
-        transform: translatex(-55%); /* Centra el círculo verticalmente */
+@font-face {
+    font-family: silkscreen;
+    src: url(fonts/Silkscreen/Silkscreen-Regular.ttf);
+}
+nav, body, footer {
+    background: linear-gradient(#000000, #20498B );
+    margin: 4%;
+    margin-top: 120px;
+}
+#contenedor-principal {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: left; /* Mueve todo hacia la izquierda */
+     /* Espacio entre el círculo y el texto */
+    width: 100%; /* Reduce un poco el ancho para centrar mejor */
+    max-width: 1080px;
+    margin: 0 auto 0 5%; /* Ajusta margen izquierdo para moverlo a la izquierda */
+    position: relative;
+}
+
+#presentacion{
+    width: 1000px; /* Ajusta el ancho del texto */
+    text-align: left;
+    margin-left: 5%;
+}
+h1{
+    font-size: 80px;
+    text-align: left;
+    font-family: Caveat;
+    color: white;
+    letter-spacing: 3px; /* Ajuste de espaciado */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 40px #FFA500;
+    animation: glow 2s infinite alternate;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFA500;
     }
-    #menu_redes{
-        margin-top: 10%;
-        transform: translatex(12%);
+    50% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 40px #FF8C00;
     }
-    h1{
-        font-size: 60px;
+    100% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFA500;
     }
-    .container{
-        width: 80%;
-        margin: 0% auto;
+}
+
+h2, h4, h5, h6{
+    color: white;
+    font-family: silkscreen;
+}
+
+#circle {
+    position: relative; /* Mantiene su lugar en el flujo normal */
+    flex:680px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    filter: drop-shadow(0 0 5px white)  drop-shadow(0 0 10px white) drop-shadow(0 0 20px #FFA500);
+    margin-top: -120px; /* Sube el círculo un poco más */
+}
+
+#nicolas {
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scaleX(-1);
+}
+
+
+
+.empleo{
+    font-family: Caveat;
+    color: white;
+    margin-top: 50PX;
+    letter-spacing: 3px; /* Ajuste de espaciado */
+    font-size: 70px;
+    text-align: center;
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
+}
+ul,li{
+    color: white;
+}
+
+#menu_redes {
+    display: flex;
+    justify-content: flex-start; /* Mueve las redes hacia la izquierda */
+    align-items: center;
+    gap: 2rem; /* Espaciado entre íconos */
+    margin-top: -50px;
+    position: relative;
+    margin-left: 13%; /* Ajusta posición para alinearlo con el contenido */
+    transform: none;
+    width: auto;
+}
+
+.redes{
+    color: rgb(233, 218, 151);
+    background: #13233a;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    margin-left: 7%; 
+    border-radius: 25%;
+    transition: all 0.7s;
+    margin-top: 5%;
+
+    
+}
+#Git{
+    color: rgb(233, 218, 151);
+    background: #13233a;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    margin-left: 8%;
+    border-radius: 50%;
+}
+#Git:hover{
+    color: black;
+    border-radius: 60px;
+    transition: all 0.7s;
+    font-size: 60px;
+    color: white;
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
+}
+#instagram:hover {
+    color: white;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
+    transition: all 0.7s;
+    font-size: 60px;
     }
-    .card{
-    width: 190px;
-    margin: 10px auto;
-    }
-    .empleo{
+#linkedin:hover{
+    background: white;
+    color: #1256b6;
+    border-radius: 10px;
+    transition: all 0.7s;
+    font-size: 60px;
+    filter: drop-shadow(0 0 5px #FFD700) 
+    drop-shadow(0 0 10px #FFD700) 
+    drop-shadow(0 0 20px #FFA500);
+}
+#circle {
+    position: relative; /* En lugar de absolute */
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    filter: drop-shadow(0 0 5px white)  
+            drop-shadow(0 0 10px white) 
+            drop-shadow(0 0 20px #FFA500);
+}
+
+#nicolas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scaleX(-1);
+}
+
+.tecno{
+    width: 100px;
+    margin-left: 4%;
+    font-size: 200px;
+    color: #13233a;
+    transition: color 4.5s ease;
+}
+
+.clearfix{
+    clear: both;
+}
+#starsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Para que esté en el fondo */
+    pointer-events: none; /* Evita que interfiera con otros elementos */
+}
+@media (max-width: 900px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
+    
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #presentacion {
+        width: 95%;
+        font-size: 1.2rem;
+        text-align: center;
+        order: 1;
+    }
+    
+    h1 {
+        font-size: 1.6rem; /* Se reduce aún más en pantallas pequeñas */
+    }
+    
+    #circle {
+        flex: 210px;
+        width: 450px;
+        height: 450px;
+        order: 2;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    #menu_redes {
+        order: 3;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    #empleo {
+        order: 4;
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #presentacion {
+        width: 95%;
+        font-size: 1.2rem;
+        text-align: center;
+        order: 1;
+    }
+    
+    h1 {
+        font-size: 1.6rem; /* Se reduce aún más en pantallas pequeñas */
+    }
+    
+    #circle {
+        flex: 210px;
+        width: 450px;
+        height: 450px;
+        order: 2;
+    }
+    #menu_redes {
+        order: 3;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    #exp {
+        order: 4;
+        font-size: 1.3rem;
+    }
+}
+
 }
