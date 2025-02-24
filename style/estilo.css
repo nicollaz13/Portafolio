@@ -8,57 +8,85 @@
 }
 nav, body, footer {
     background: linear-gradient(#000000, #20498B );
-    margin: 10%;
+    margin: 4%;
+    margin-top: 120px;
 }
+
+
+#contenedor-principal {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: left; /* Mueve todo hacia la izquierda */
+     /* Espacio entre el círculo y el texto */
+    width: 100%; /* Reduce un poco el ancho para centrar mejor */
+    max-width: 1080px;
+    margin: 0 auto 0 5%; /* Ajusta margen izquierdo para moverlo a la izquierda */
+    position: relative;
+}
+
 #presentacion{
-    width: 55%;
-    margin-left: 35%;
-    margin-top: 15%;
+    width: 1000px; /* Ajusta el ancho del texto */
+    text-align: left;
+    margin-left: 5%;
 }
 h1{
     font-size: 80px;
+    text-align: left;
     font-family: Caveat;
     color: white;
     letter-spacing: 3px; /* Ajuste de espaciado */
     margin-top: 5px;
     margin-bottom: 5px;
-    text-shadow: 
-        0 0 5px #FFD700, 
-        0 0 10px #FFD700, 
-        0 0 20px #FFA500, 
-        0 0 40px #FFA500;
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 40px #FFA500;
     animation: glow 2s infinite alternate;
-    
 }
+
+
 @keyframes glow {
   0% {
-    text-shadow: 
-        0 0 5px #FFD700, 
-        0 0 10px #FFD700, 
-        0 0 20px #FFA500;
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFA500;
+  }
+  50% {
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 40px #FF8C00;
+  }
+  100% {
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFA500;
+  }
 }
-50% {
-    text-shadow: 
-        0 0 10px #FFD700, 
-        0 0 20px #FFA500, 
-        0 0 40px #FF8C00;
-}
-100% {
-    text-shadow: 
-        0 0 5px #FFD700, 
-        0 0 10px #FFD700, 
-        0 0 20px #FFA500;
-}
-}
+
 h2, h4, h5, h6{
     color: white;
     font-family: silkscreen;
-    
-    /*2A4D6F*/
 }
+
+#circle {
+    position: relative; /* Mantiene su lugar en el flujo normal */
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    filter: drop-shadow(0 0 5px white)  drop-shadow(0 0 10px white) drop-shadow(0 0 20px #FFA500);
+    margin-top: -100px; /* Sube el círculo un poco más */
+}
+
+#nicolas {
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scaleX(-1);
+}
+
+
+
 .empleo{
   font-family: Caveat;
   color: white;
+  margin-top: 50PX;
   letter-spacing: 3px; /* Ajuste de espaciado */
     font-size: 70px;
     text-align: center;
@@ -69,11 +97,19 @@ h2, h4, h5, h6{
 ul,li{
     color: white;
 }
-#menu_redes{
-    position: center;
-    margin-right: 45%;
-    margin-top: 30px;
+
+#menu_redes {
+    display: flex;
+    justify-content: flex-start; /* Mueve las redes hacia la izquierda */
+    align-items: center;
+    gap: 2rem; /* Espaciado entre íconos */
+    margin-top: 50px;
+    position: relative;
+    left: 135px; /* Ajusta posición para alinearlo con el contenido */
+    transform: none;
+    width: auto;
 }
+
 .redes{
     color: rgb(233, 218, 151);
     background: #13233a;
@@ -126,32 +162,27 @@ ul,li{
     drop-shadow(0 0 20px #FFA500);
 }
 #circle {
-    margin: auto;
-    margin-left: 52% ;
+    position: relative; /* En lugar de absolute */
     width: 450px;
     height: 450px;
-
-    border-radius: 50%; /* Hace que el div sea circular */
-    position: absolute; /* Fija la posición del círculo en la pantalla */
-    top: 8%; /* Ajusta la posición vertical */
-    transform: translateX(-190%);
-    display: flex; /* Usa flexbox para centrar el contenido */
-    justify-content: center; /* Centra el video horizontalmente */
-    align-items: center; /* Centra el video verticalmente */
-    overflow: hidden; /* Esconde el contenido que sobresalga del círculo */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     filter: drop-shadow(0 0 5px white)  
-    drop-shadow(0 0 10px white) 
-    drop-shadow(0 0 20px #FFA500) 
-  }
+            drop-shadow(0 0 10px white) 
+            drop-shadow(0 0 20px #FFA500);
+}
+
 #nicolas {
-    width: 1000px; /* Aumenta el ancho */
-    height: 800px; /* Aumenta la altura */
-    max-width: 100%; /* Asegura que el video no se salga del círculo */
-    max-height: 100%;
-    object-fit: cover; /* Ajusta el aspecto del video */
-    border-radius: 50%; /* Hace que el video sea circular */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
     transform: scaleX(-1);
 }
+
 .tecno{
     width: 100px;
     margin-left: 4%;
@@ -159,68 +190,7 @@ ul,li{
     color: #13233a;
     transition: color 4.5s ease;
 }
-@keyframes htmla {
-    0% {
-      color: #13233a; /* Blanco */
-    }
-    100% {
-      color: orange; /* Azul claro */
-    }
-  }
-  @keyframes css {
-    0% {
-      color: #13233a; /* Blanco */
-    }
-    100% {
-      color: rgb(34, 150, 217); 
-    }
-}
-    @keyframes jsa {
-        0% {
-          color: #13233a; 
-        }
-        100% {
-          color: yellow; 
-        }
-    }
 
-    @keyframes photo {
-        0% {
-          color: #13233a; 
-        }
-        100% {
-            color: #00B5EE;
-        }
-    }
-
-    @keyframes adobe {
-        0% {
-          color: #13233a; 
-        }
-        100% {
-            color: #67028b;
-        }
-    }
-    @keyframes figma {
-        0% {
-          color: #13233a; 
-        }
-        100% {
-            color: rgb(8, 244, 244);
-        }
-    }
-
-    @keyframes ai {
-        0% {
-          color: #13233a; 
-        }
-        100% {
-            color: #FFB900;
-        }
-    }
-
-
-
-  .clearfix{
+.clearfix{
     clear: both;
 }
