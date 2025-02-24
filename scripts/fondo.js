@@ -28,10 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Genera cada estrella con valores aleatorios y las guarda en el array
     for (let i = 0; i < numStars; i++) {
         stars.push({
-            x: Math.random() * canvas.width,  // Posición X aleatoria dentro del canvas
-            y: Math.random() * canvas.height, // Posición Y aleatoria dentro del canvas
-            radius: Math.random() * 0.8 + 0.5,  // Tamaño de la estrella (entre 0.5 y 1.5)
-            speed: Math.random() * 0.2 + 0.3, // Velocidad de movimiento (entre 0.1 y 0.4)
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 0.8 + 0.5,
+            speed: Math.random() * 0.2 + 0.3,
+            opacity: Math.random() * 0.5 + 0.3  // Velocidad de movimiento (entre 0.1 y 0.4)
         });
     }
 
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Si la estrella sale de la pantalla (llega al final), la reposicionamos arriba
             if (star.y > canvas.height) {
-                star.y = 1; // Se reinicia la posición en la parte superior
+                star.y = 0; // Se reinicia la posición en la parte superior
                 star.x = Math.random() * canvas.width; // Se genera una nueva posición X aleatoria
             }
         });

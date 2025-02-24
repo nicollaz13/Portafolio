@@ -10,7 +10,6 @@ nav, body, footer {
     background: linear-gradient(#000000, #20498B );
     margin: 4%;
     margin-top: 120px;
-    overflow: hidden;
 }
 #contenedor-principal {
     display: flex;
@@ -60,10 +59,11 @@ h2, h4, h5, h6{
 
 #circle {
     position: relative; /* Mantiene su lugar en el flujo normal */
+    flex:680px;
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    flex:680px;
+    
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -102,9 +102,9 @@ ul,li{
     justify-content: flex-start; /* Mueve las redes hacia la izquierda */
     align-items: center;
     gap: 2rem; /* Espaciado entre íconos */
-    margin-top: 10px;
+    margin-top: -50px;
     position: relative;
-    left: 180px; /* Ajusta posición para alinearlo con el contenido */
+    margin-left: 13%; /* Ajusta posición para alinearlo con el contenido */
     transform: none;
     width: auto;
 }
