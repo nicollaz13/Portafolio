@@ -82,12 +82,12 @@ h2, h4, h5, h6{
 
 
 
-.empleo{
+#empleo{
     font-family: Caveat;
     color: white;
     margin-top: 50PX;
     letter-spacing: 3px; /* Ajuste de espaciado */
-    font-size: 70px;
+    font-size: 55px;
     text-align: center;
     filter: drop-shadow(0 0 5px #FFD700) 
     drop-shadow(0 0 10px #FFD700) 
